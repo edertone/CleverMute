@@ -1,0 +1,4 @@
+- Blacklisted tabs should be muted by default to avoid them to sound for a small amount of time before being muted when playing a sound
+- Convert storage to storage sync so the extension data is stored between different pcs 
+- Add audio priority: If several tabs sound at the same time, the active one mutes all the others
+- If a page starts playing sound and there was a previous one that was playing, we could ask to avoid new tab to interfere with previous one

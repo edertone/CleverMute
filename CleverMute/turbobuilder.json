@@ -1,0 +1,50 @@
+{
+    
+    "$schema": "https://raw.githubusercontent.com/edertone/TurboBuilder/master/TurboBuilder-Node/src/main/resources/json-schema/turbobuilder.schema.json",
+    
+    "metadata": {
+        "name": "Clever Mute",
+        "description": "An extension to manage chrome tabs muting in a smart way",
+        "builderVersion": "0.5.2"
+    },
+    "validate": {
+        "runBeforeBuild": true,
+        "projectStructure": {
+            "enabled": true,
+            "forceExtrasFolder": true,
+            "forceReadmeFile": true,
+            "forceTodoFolder": true,
+            "resourcesStructure": true,
+            "checkGitIgnore": true
+        },
+        "copyrightHeaders": []
+    },
+    "build": {
+    
+        "replaceVersion": {
+            "enabled": true,            
+            "wildCard": "@@--build-version--@@",            
+            "extensions": ["js", "php", "json"]
+        },
+    
+        "lib_js": {
+            "deleteNonMergedJs": false,
+            "createMergedFile": false,
+            "mergedFileName": ""
+        }
+    },
+    "release": {
+        "printTodoFiles": true,
+        "gitChangeLog": true,
+        "gitChangeLogCount": 5,
+        "optimizePictures": true,
+        "generateCodeDocumentation": true
+    },
+    "sync": [],
+    "test": [
+        {
+            "type": "jasmine",
+            "jasmineConfig": "src/test/js/jasmine.json"
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+- Write a manual test protocol to efficiently check the whole extension behaviour

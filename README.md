@@ -1,4 +1,4 @@
-# CleverMute
+# CleverMute (Google Chrome extension)
 
 This extension mutes all sites by default. If a site tries to play any sound you'll be notified so you can decide what to do
 If you like this extension and want to help the developer, please consider making a donation:
